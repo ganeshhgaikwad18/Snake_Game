@@ -130,7 +130,9 @@ gap:var(--space-md);
  justify-content:center;
 }
 .btn1{
-border:1px solid var(--border-primary-color);
+border:2px solid var(--border-primary-color);
 }
-
+.gap{
+    gap:var(--space-md);
+ }
 
