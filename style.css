@@ -122,3 +122,8 @@ gap:var(--space-md);
 .modal .game-over{
     display: none;
 }
+.controls{
+ display:flex;
+ flex-direction:column;
+    
+}
