@@ -104,7 +104,7 @@ modal.style.display="none";
 direction="right";
     interval=setInterval(()=>{
         render();
-    },100);
+    },50);
     timerIntervalId=setInterval(()=>{
         let [min,sec]=time.split("-").map(Number);
         if(sec==59){
