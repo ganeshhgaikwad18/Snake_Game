@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 5px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+/*background color*/
+--bg-fill-color:#aca6a6;
+--bg-primary-color:#14141400;
+/*text-color*/
+--text-primary-color:#cecaca;
+/*padding*/
+--space-xs:4px;
+--space-sm:8px;
+--space-md:16px;
+--space-lg:24px;
+--space-xl:32px;
+--space-2xl:40px;
+/*border color*/
+--border-primary-color:#333333;
+/*border radius*/;
+--border-xs:4px;
+--border-sm:8px;
+--border-md:12px;
+--border-lg:16px;
+--border-xl:20px;
+--border-2xl:24px;
+/*food-c0lor*/
+--bg-food-color:red;
+
+
+/
+}
+
+html{
+    background-color: black;
+color:var(--text-primary-color);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+section,main{
+    width: 100%;
+    height: 100%;
+   
+} 
+section .infos{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+section{
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    height:100%;
+   
+    gap: var(--space-lg);
+
+}
+.info{
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-sm);
+
+}
+section .board{
+    border: 1px solid var(--border-primary-color);
+    height: 10px;
+    flex-grow:1;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(10px,1fr));
+    grid-template-rows:repeat(auto-fill,minmax(10px,1fr));
+    
+}
+.block{
+border:1px solid var(--border-primary-color);
+}
+.fill{
+    background-color: var(--bg-fill-color);
+}
+.food
+{
+    background-color: var(--bg-food-color);
+}
+.btn{
+   padding: var(--space-sm) var(--space-md);
+   border: none;
+   border-radius: var(--border-sm);
+   cursor:pointer;
+   transition:all 0.3s ease;
+
+}
+.btn:hover{
+transform:scale(1.1);
+}
+.modal{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top: 0;
+    background-color:#35353587 ;
+    backdrop-filter: blur(4px) ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.modal .start-game,
+.modal .game-over{
+display:flex;
+flex-direction: column;
+align-items: center;
+gap:var(--space-md);
+}
+.modal .game-over{
+    display: none;
+}
