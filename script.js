@@ -104,7 +104,7 @@ modal.style.display="none";
 direction="right";
     interval=setInterval(()=>{
         render();
-    },10);
+    },100);
     timerIntervalId=setInterval(()=>{
         let [min,sec]=time.split("-").map(Number);
         if(sec==59){
@@ -116,7 +116,7 @@ direction="right";
         }
         time=`${min}-${sec}`
         timeElement.innerText=time;
-    },50)
+    },100)
 });
 
 restartbutton.addEventListener("click",()=>{restartGame();});
