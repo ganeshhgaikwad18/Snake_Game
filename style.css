@@ -133,6 +133,6 @@ gap:var(--space-md);
 border:2px solid var(--border-primary-color);
 }
 .gap{
-    gap:var(--space-md);
+    gap:var(--space-lg);
  }
 
