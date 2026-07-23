@@ -165,3 +165,15 @@ addEventListener("keydown",(event)=>{
 function restart(){
 
 }
+function up(){
+  direction="up";
+}
+function down(){
+  direction="down";
+}
+function left(){
+ direction="left";
+}
+function rigth(){
+ direction="right";
+}
