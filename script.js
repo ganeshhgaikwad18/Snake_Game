@@ -116,7 +116,7 @@ direction="right";
         }
         time=`${min}-${sec}`
         timeElement.innerText=time;
-    },1000)
+    },100)
 });
 
 restartbutton.addEventListener("click",()=>{restartGame();});
