@@ -133,7 +133,9 @@ gap:var(--space-md);
 border:2px solid var(--border-primary-color);
 }
 .gap{
-    margin:var(--space-lg);
-    justify-content:space-between;
- }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
 
