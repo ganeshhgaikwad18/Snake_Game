@@ -134,7 +134,7 @@ border:2px solid var(--border-primary-color);
 }
 .gap{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 20px;
 }
